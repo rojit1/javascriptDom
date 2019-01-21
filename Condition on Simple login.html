@@ -1,0 +1,42 @@
+
+<!doctype html>
+<html>
+<head>
+	<title></title>
+</head>
+<script type="text/javascript">
+function check () {
+	var UserN = document.getElementById('uname').value;
+ 	var UserP = document.getElementById('pname').value;
+	if(UserN=="" && UserP=="")
+	{
+		alert("Enter your Username and Password");
+		return false;
+	}
+	else if (UserN==""){
+		alert("Enter Your Username");
+		return false;
+	}
+	else if (UserP==""){
+	
+	alert("Enter Your Password");
+		return false;
+	}
+		else {
+				return true;
+		}
+}
+</script>
+
+<body>
+
+<form onsubmit="return check();">
+<p>Username</p>
+<input type="Textbox"placeholder="Username" Id="uname">
+<p>password</p>
+<input type="password"placeholder="password" Id="pname">
+<p><input type="submit" value="login"></p>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+	<title>Condition </title>
+<script type="text/javascript">
+	function check()
+	{
+		if(document.getElementById('username').value=="")
+		{
+			alert("Please Enter Your Name");
+			document.getElementById('username').select()
+			return false;
+		}
+		else if(document.getElementById('password').value=="")
+		{
+			alert("Please Enter Password");
+			document.getElementById('password').select()
+			return false;
+		}
+		else if(document.getElementById('repassword').value=="")
+		{
+			alert("Please Re-Enter Your Password");
+			document.getElementById('repassword').select();
+			return false;
+		}
+		else if(document.getElementById('password').value!=document.getElementById('repassword').value)
+		{
+			alert("Password Did not Match");
+			document.getElementById('repassword').select()
+			return false;
+		}
+		else if(document.getElementById('number').value=="")
+		{
+			alert("Please Enter Your Number");
+			document.getElementById("number").select()
+			return false;
+		}
+		else if(isNaN(document.getElementById('number').value))
+		{
+			alert("Please Enter Valid Number!!!");
+			document.getElementById("number").select()
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+	}
+</script>
+</head>
+<body>
+	<form onsubmit="return check()";>
+		<p>User Name:<br>
+			<input type="text" id ="username" placeholder="Enter Your Name"></p>
+		<p>Password:<br>
+			<input type="password" id ="password" placeholder="Enter Your Password"></p>
+		<p>Re-password:<br>
+			<input type="password" id ="repassword" placeholder="Enter Your Re-Password"></p>
+		<p>Number:<br>
+			<input type="number" id ="number" placeholder="Enter Number"></p>
+		<p> 
+			<input type="submit" value="Login"></p>
+		</form>
+
+</body>
+</html>

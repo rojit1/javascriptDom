@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+textarea 
+{
+	height: 150px;
+	width: 200px;
+}
+
+</style>
+<script type="text/javascript">
+function a()
+{
+	var a=document.getElementById('demo');
+	var b=document.getElementById('demo1');
+	b.value=a.value;
+}
+	
+</script>
+<body>
+	<h2>JavaScript Can autotype text in another Box.</h2>
+	<textarea id="demo" onkeyup="a();"></textarea>
+	<textarea id="demo1"></textarea>
+
+</body>
+</html>

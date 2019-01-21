@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+	<title>Mandatory Field Display</title>
+</head>
+<style>
+span
+{
+	color:red;
+}
+</style>
+<script type="text/javascript">
+	function valid()
+	{
+		if(document.getElementById('username').value=="")
+		{
+			x="Please Enter Your Username";
+			document.getElementById('demo').innerHTML=x;
+			document.getElementById('username').select()
+			return false;
+		}
+		else if(document.getElementById('password').value=="")
+		{
+			y="Please Enter Your Password";
+			document.getElementById('demo1').innerHTML=y;
+			document.getElementById('password').select()
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+	}
+</script>
+<body>
+	<form onsubmit="return valid();">
+	<p>Username:<br>
+		<input type="text"placeholder="Enter Your Username" id="username"><span id="demo">*</span></p>
+	<p>Password:<br>
+		<input type="password"placeholder="Enter Your Password" id="password"><span id="demo1">*</span></p>
+	<input type="submit"value="Submit">
+</form>
+
+<h1>JavaScript Can Display Date and Time.</h1>
+<p id="demo2"></p>
+<button type="button" onclick="document.getElementById('demo2').innerHTML=Date();">Click Here</button>
+
+</body>
+</html>

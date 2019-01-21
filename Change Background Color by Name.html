@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+	<title>Change Background Color</title>
+</head>
+<script type="text/javascript">
+	function a(newbg)
+	{
+		document.body.bgColor=newbg;
+	}
+	function b(color)
+	{
+		document.getElementById('demo').style.color=color;
+	}
+
+</script>
+<body>
+	<h1>Change Body Color by clicking bellow button.</h1>
+	<button onclick="a('cyan')">Cyan</button>
+	<button onclick="a('brown')">Brown</button>
+
+	
+	<h1 id="demo">Change My Color!!!</h1>
+	<input type="submit" onclick="b('blue')">
+
+</body>
+</html>

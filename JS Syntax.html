@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+	<title>Syntax</title>
+</head>
+<body>
+	<h1> JavaScript Numbers</h1>
+	<h3> Number Can be written with or without decimals.</h3>
+
+	<p id="demo"></p>
+	<script type="text/javascript">
+		document.getElementById("demo").innerHTML = 10.50;
+	</script>
+
+	<h1>Javascript Strings</h1>
+	<p>Strings can be written with double or single quotes.</p>
+
+	
+	<p id="demo2"></p>
+	<script>
+		document.getElementById('demo2').innerHTML='Bucky Rojer';
+	</script>
+
+	<h1> JavaScript Variables</h1>
+	<p>In this example, x is defined as a variable. Then, x is assigned the value of 6;</p>
+
+	<p id="demo3"></p>
+	<script>
+	var x;
+	x = 6;
+	document.getElementById('demo3').innerHTML=x;
+	</script>
+
+	<h1>Assigning Values</h1>
+	<p> In the JavaScript = operator is used to assign values to variables.</p>
+
+	<p id ="demo4"></p>
+	<script>
+		var x = 5;
+		var y = 6;
+		document.getElementById("demo4").innerHTML = x + y;
+	</script>
+
+	<h1>JavaScript Operators</h1>
+	<p>JavaScript Uses Arithmetic operators to compute values (just like algebra).
+		<br>JavaScript uses arithmetic operators ( + - *  / ) to compute values:</p>
+
+	<p id = "demo5"></p>
+	<script>
+		document.getElementById("demo5").innerHTML = (5+6)*10; 
+	</script>
+
+	<h1>JavaScript Expressions</h1>
+	<p> Expressions compute to values.</p>
+	
+	<p id="demo6"></p>
+	<script>
+		var x = 5;
+		document.getElementById("demo6").innerHTML = x*100;
+	</script>
+
+	<h1>Expressions compute to value.</h1>
+	<p id = "demo7"></p>
+	<script>
+		document.getElementById("demo7").innerHTML = "Bucky" +" " + "Rojer";
+	</script>
+
+	<h1>The var keyword Creates a Variable </h1>
+	
+	<p id = "demo8"></p>
+	<script>
+		var x = 6+6;
+		var y = x*20;
+		document.getElementById("demo8").innerHTML = y;
+	</script>
+
+	<h1>Comments are Not Excuted</h1>
+	<p id="demo9"></p>
+	<script>
+	var x = 6;
+	// var x = 5; I will not be excuted
+	document.getElementById("demo9").innerHTML = x;
+	</script>
+
+	<h1> JavaScript is Case Sensitive </h1>
+	<h2> Try change lastName to lastname.</h2>
+	<p id ="demo10"></p>
+	<script>
+		var lastName = "Doe";
+		var lastname = "Peterson";
+		document.getElementById("demo10").innerHTML = lastName;
+	</script>
+
+	<h1>My WeB Page</h1>
+	<p id = "mypar"><b>I am a Paragraph.</b></p>
+	<div id = "mydiv"><b>I am a Div.</b></div>
+
+	<p> 
+		<button type="button" onclick="myFunction()">Try It</button></p>
+
+		<script>
+		function myFunction() {
+			document.getElementById("mypar").innerHTML = "Hello Dolly";
+			document.getElementById("mydiv").innerHTML = "How are You?";
+		}
+		</script>
+		<p><b>When you click on "try It", the two elements will change.<b></p>
+
+
+
+
+</body>
+</html>

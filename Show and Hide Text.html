@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+	<title>Show&Hide</title>
+</head>
+<style type="text/css">
+button
+{
+	font-weight: bold;
+	color:green;
+	background-color:cyan;
+}
+h2
+{
+	color: red;
+}
+</style>
+<script type="text/javascript">
+function a()
+{
+	document.getElementById("demo").style.visibility="hidden"
+}
+function b()
+{
+	document.getElementById("demo").style.visibility="visible"
+}
+</script>
+<body>
+	<h2 Id="demo">When you click "SHOW" button then this text will be display and if you click "HIDE" button this text will be hide, Try it now...!!</h2>
+
+	<button onclick="b()";>SHOW</button>
+	<button onclick="a()";>HIDE</button>
+
+</body>
+</html>
